@@ -137,9 +137,11 @@ button:hover {
 /* //////////////////////////////////////////  FILM   ////////////////////////////////////////// */
 
 .Film-Container {
-  margin: 20px 80px;
-  display: flex;
-  flex-wrap: wrap;
+  width: 150px;
+  height: 225px;
+  flex: 0 0 15%;
+  margin: 20px 20px;
+
 }
 
 .Film {
@@ -171,4 +173,13 @@ button:hover {
   object-fit: cover;
   width: 150px;
   height: auto;
+}
+
+/* //////////////////////////////////////////  SERIES   ////////////////////////////////////////// */
+
+.Series-Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }

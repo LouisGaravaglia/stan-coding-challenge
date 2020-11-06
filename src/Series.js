@@ -25,7 +25,9 @@ const Series = () => {
     <div>
     <Header title="Popular Series" />
     <h1>Series PAGE</h1>
+    <div className="Series-Container">
       {filmData.map(film => <Film title={film.title} image={film.images["Poster Art"].url}/>)}
+    </div>
     <Footer />
     </div>
 
