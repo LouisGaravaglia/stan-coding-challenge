@@ -13,8 +13,8 @@ const Header = ({title}) => {
         <h2 className="Header-SubHeader-Title">{title}</h2>
       </div>
     </div>
-  )
+  );
 
-}
+};
 
 export default Header;

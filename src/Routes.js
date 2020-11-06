@@ -9,16 +9,15 @@ const Routes = () => {
 
   return (
     <>
-    <Switch>
-      <Route exact path="/series"><Series /></Route>
-      <Route exact path="/movies"><Movies /></Route>
-      <Route exact path="/"><Home /></Route>
-      <Redirect to="/" />
-    </Switch>
-
+      <Switch>
+        <Route exact path="/series"><Series /></Route>
+        <Route exact path="/movies"><Movies /></Route>
+        <Route exact path="/"><Home /></Route>
+        <Redirect to="/" />
+      </Switch>
     </>
-  )
+  );
 
-}
+};
 
 export default Routes;
