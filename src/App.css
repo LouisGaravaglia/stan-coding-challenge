@@ -151,6 +151,7 @@ button:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
 }
 
 .Film-Main-Title {
@@ -164,8 +165,10 @@ button:hover {
 .Film-Subtitle {
   display: block;
 }
-/* 
+
 .Film-Img {
   position: absolute;
-  z-index: 2;
-} */
+  object-fit: cover;
+  width: 150px;
+  height: auto;
+}

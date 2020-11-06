@@ -13,10 +13,11 @@ const Series = () => {
     const getFilms = async () => {
       const films = await StreamCoAPI.getFilmTitles();
       console.log("FILMS: ", films);
+      console.log("IMAGES: ", films[0].images["Poster Art"].url);
       setFilmData(films)
     }
     getFilms()
-  }, [])
+  }, [setFilmData])
 
 
 
@@ -24,7 +25,7 @@ const Series = () => {
     <div>
     <Header title="Popular Series" />
     <h1>Series PAGE</h1>
-      {filmData.map(film => <Film title={film.title}/>)}
+      {filmData.map(film => <Film title={film.title} image={film.images["Poster Art"].url}/>)}
     <Footer />
     </div>
 
