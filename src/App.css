@@ -14,6 +14,7 @@ html{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
   width: 100vw;
   height: 10vh;
   background-color: #017efe;
@@ -185,3 +186,29 @@ margin-top: -300px;
   align-items: center;
   margin: 50px 0 300px 60px;
 }
+
+/* //////////////////////////////////////////  MEDIA QUERIES   ////////////////////////////////////////// */
+
+
+@media (max-width: 823px) { 
+
+.Header-NavBar {
+  display: flex;
+  justify-content: left ;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 25vh;
+  background-color: #017efe;
+  color: white;
+}
+
+.Header-NavBar-RightSide {
+  margin-left: 80px;
+}
+
+.Header-NavBar-Logo {
+  margin-top: 20px;
+}
+
+ }
