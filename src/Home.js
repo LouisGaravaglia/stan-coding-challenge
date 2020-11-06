@@ -10,7 +10,10 @@ const Home = () => {
   return (
     <>
     <Header title="Popular Titles"/>
-    <Placeholder />
+    <div className="Series-Container">
+      <Placeholder title="SERIES" subtitle="Popular Series"/>
+      <Placeholder title="MOVIES" subtitle="Popular Movies"/>
+    </div>
     <Footer />
     </>
   )

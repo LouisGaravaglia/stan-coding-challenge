@@ -1,9 +1,8 @@
 import React from "react";
 import "./App.css"
 import placeholder from "./logos/placeholder.png";
-import twitter from "./logos/twitter-blue.svg";
 
-const Film = ({title}) => {
+const Placeholder = ({title, subtitle}) => {
 
   return (
   <div className="Film-Container">
@@ -15,11 +14,11 @@ const Film = ({title}) => {
 
     </div>
 
-    <p className="Film-Subtitle">Subtitle</p>
+    <p className="Film-Subtitle">{subtitle}</p>
 
   </div>
   )
 
 }
 
-export default Film;
+export default Placeholder;
