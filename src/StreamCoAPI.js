@@ -1,21 +1,15 @@
 import axios from "axios";
 
-const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:3001";
+const BASE_URL = process.env.REACT_APP_BASE_URL || "https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json";
 
 class StreamCoAPI {
-    static async request(endpoint, paramsOrData = {}, verb = "get") {
-    
-  
-      console.debug("API Call:", endpoint, paramsOrData, verb);
+
+    static async getFilmTitles() {
   
       try {
-        return (await axios({
-          method: verb,
-          url: `${BASE_URL}/${endpoint}`,
-          [verb === "get" ? "params" : "data"]: paramsOrData})).data;
-          // axios sends query string data via the "params" key,
-          // and request body data via the "data" key,
-          // so the key we need depends on the HTTP verb
+        const res = await axios.get(BASE_URL);
+        console.log("res: ", res);
+        return res.data.entries
       }
   
       catch(err) {
@@ -25,15 +19,6 @@ class StreamCoAPI {
       }
     }
 
-    static async getUsers() {
-      let res = await this.request("users");
-      return res;
-    }
-  
-    static async registerUser(data) {
-      let res = await this.request("users", data, "post");
-      return res
-    }
 
   }
 

@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+html{
+  position:relative; 
+  min-height: 100%;
+}
+
+/* //////////////////////////////////////////  HEADER  ////////////////////////////////////////// */
+
 .Header-NavBar {
   display: flex;
   justify-content: space-between;
@@ -61,6 +68,8 @@ button:hover {
   margin-left: 80px;
 }
 
+/* //////////////////////////////////////////  FOOTER  ////////////////////////////////////////// */
+
 .Footer-Container {
   position: relative;
 }
@@ -97,10 +106,6 @@ button:hover {
   margin: 50px 80px 40px 80px;
 }
 
-/* .Footer-Logos-Social {
-  height: 20px;
-} */
-
 .Facebook {
   height: 30px;
   margin-right: 30px;
@@ -129,3 +134,38 @@ button:hover {
   height: 40px;
 }
 
+/* //////////////////////////////////////////  FILM   ////////////////////////////////////////// */
+
+.Film-Container {
+  margin: 20px 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Film {
+  position: relative;
+  background-color: #1e1e1e;
+  width: 150px;
+  height: 225px;
+  margin-bottom: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Film-Main-Title {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+
+}
+
+.Film-Subtitle {
+  display: block;
+}
+/* 
+.Film-Img {
+  position: absolute;
+  z-index: 2;
+} */
