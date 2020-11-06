@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css"
 
-const Header = () => {
+const Header = ({title}) => {
 
   return (
     <div className="Header">
@@ -10,7 +10,7 @@ const Header = () => {
         <div className="Header-NavBar-RightSide"><p className="Header-Login">Login</p><button className="Header-Btn">Start your free trial</button></div>
       </div>
       <div className="Header-SubHeader">
-        <h2 className="Header-SubHeader-Title">Popular Titles</h2>
+        <h2 className="Header-SubHeader-Title">{title}</h2>
       </div>
     </div>
   )

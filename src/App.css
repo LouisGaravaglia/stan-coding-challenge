@@ -61,3 +61,72 @@ button:hover {
   margin-left: 80px;
 }
 
+.Footer-Container {
+  position: relative;
+}
+
+.Footer{
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 35vh;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.Footer-Links {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+  font-weight: 400;
+  margin: 40px 0 0 80px;
+}
+
+.Footer-Copyright {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .8rem;
+  font-weight: 300;
+  margin: 20px 0 0 80px;
+  color: rgb(198, 198, 198);
+}
+
+
+.Footer-Logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 80px 50px 80px;
+}
+
+/* .Footer-Logos-Social {
+  height: 20px;
+} */
+
+.Facebook {
+  height: 30px;
+  margin-right: 30px;
+}
+
+.Twitter {
+  height: 30px;
+  margin-right: 30px;
+}
+
+.Instagram {
+  height: 30px;
+}
+
+.AppStore {
+  height: 40px;
+  margin-right: 50px;
+}
+
+.PlayStore {
+  height: 40px;
+  margin-right: 50px;
+}
+
+.WindowsStore {
+  height: 40px;
+  margin-right: 50px;
+}
+

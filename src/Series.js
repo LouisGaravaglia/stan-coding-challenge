@@ -1,22 +1,18 @@
 import React, { useContext, useState, useEffect } from "react";
 import StreamCoAPI from "./StreamCoAPI";
 import "./App.css";
+import Header from "./Header";
 
 
 const Series = () => {
-    const [users, setUsers] = useState([]);
 
-    useEffect(() => {
-        async function getUsers() {
-            const userResults = await StreamCoAPI.getUsers();
-            setUsers(userResults);
-        }
-        getUsers();
-    }, []);
+
 
   return (
-
+    <div>
+    <Header title="Popular Series" />
     <h1>Series PAGE</h1>
+    </div>
 
   )
 }
