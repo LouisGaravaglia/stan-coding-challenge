@@ -165,7 +165,7 @@ button:hover {
 }
 
 .Film-Subtitle {
-  display: block;
+margin-top: -300px;
 }
 
 .Film-Img {
@@ -182,4 +182,5 @@ button:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: 50px 0 300px;
 }

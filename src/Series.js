@@ -11,20 +11,22 @@ const Series = () => {
 
   useEffect(() => {
     const getFilms = async () => {
-      const films = await StreamCoAPI.getFilmTitles();
-      console.log("FILMS: ", films);
-      console.log("IMAGES: ", films[0].images["Poster Art"].url);
-      setFilmData(films)
+      const data = await StreamCoAPI.getFilmTitles();
+      const recentSeries = data.filter(function (el) {
+        return el.releaseYear >= 2010 &&
+         el.programType === "series" 
+      });
+      const sortedSeries = recentSeries.sort((a, b) => (a.title > b.title) ? 1 : -1).slice(0, 20)
+      console.log("data: ", data);
+      console.log("sorted series: ", sortedSeries);
+      setFilmData(sortedSeries)
     }
     getFilms()
   }, [setFilmData])
 
-
-
   return (
     <div>
     <Header title="Popular Series" />
-    <h1>Series PAGE</h1>
     <div className="Series-Container">
       {filmData.map(film => <Film title={film.title} image={film.images["Poster Art"].url}/>)}
     </div>
